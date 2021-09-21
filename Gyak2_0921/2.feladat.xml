@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<targyalo>
+    <konferencia id="konf_1">
+        <cim id="cim_1"/>
+        
+        <hallgatok>
+            <hallgato1 id="hallgato_1">
+                <hallgato_nev id="nev_1" h_nev="Szabo_Daniel"/>
+                <neptun id="neptun_1" neptun_nev="XUXEJO"/>
+                <hallgato_lakcim id="cim_1" lak="Ozd"/>
+            </hallgato1>
+            <hallgato2 id="hallgato_2">
+                <hallgato_nev id="nev_2" h_nev="Peto_Adam"/>
+                <neptun id="neptun_2" neptun_nev="ABCDEF"/>
+                <hallgato_lakcim id="cim_2" lak="Miskolc"/>
+            </hallgato2>
+        </hallgatok>
+        
+        <eloado id="elado_1">
+            <eloado_nev id="e_nev_1" e_nev="Bednarik_Laszlo"/>
+            <adoszam id="adosz_1" adosz="123123AS"/>
+            <eloado_lakcim id="e_cim_1" e_lak="Miskolc"/>
+        </eloado>
+        
+        <datum id="datum_1" date="2021-09-21"/>
+    </konferencia>
+</targyalo>
