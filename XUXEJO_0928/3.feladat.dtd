@@ -1,0 +1,30 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT udvar (gazda,kutya,kakas,tyuk+,diszno)>
+<!ATTLIST udvar
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT gazda (#PCDATA)>
+<!ATTLIST gazda
+  xmlns CDATA #FIXED ''
+  nev NMTOKEN #REQUIRED>
+
+<!ELEMENT kutya (#PCDATA)>
+<!ATTLIST kutya
+  xmlns CDATA #FIXED ''
+  nev NMTOKEN #REQUIRED>
+
+<!ELEMENT kakas (#PCDATA)>
+<!ATTLIST kakas
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT tyuk (#PCDATA)>
+<!ATTLIST tyuk
+  xmlns CDATA #FIXED ''
+  ferj NMTOKEN #REQUIRED>
+
+<!ELEMENT diszno (#PCDATA)>
+<!ATTLIST diszno
+  xmlns CDATA #FIXED ''
+  nev NMTOKEN #REQUIRED>

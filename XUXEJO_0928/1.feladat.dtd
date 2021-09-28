@@ -1,0 +1,35 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT konyvtar (konyv)*>
+<!ATTLIST konyvtar
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT konyv (cim,kiadasev,kiado,szerzo)>
+<!ATTLIST konyv
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED
+  mufah NMTOKEN #REQUIRED>
+
+<!ELEMENT cim (#PCDATA)>
+<!ATTLIST cim
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED
+  nev NMTOKEN #REQUIRED>
+
+<!ELEMENT kiadasev (#PCDATA)>
+<!ATTLIST kiadasev
+  xmlns CDATA #FIXED ''
+  ev CDATA #REQUIRED
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT kiado (#PCDATA)>
+<!ATTLIST kiado
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED
+  knev CDATA #REQUIRED>
+
+<!ELEMENT szerzo (#PCDATA)+>
+<!ATTLIST szerzo
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED
+  sznev CDATA #REQUIRED>

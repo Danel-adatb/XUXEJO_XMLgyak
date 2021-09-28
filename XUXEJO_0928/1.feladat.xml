@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konyvtar>
+    <konyv id="k1" mufah="XML">
+        <cim id="cim1" nev="JSON_es_XML"></cim>
+        <kiadasev id="kiadas1" ev="2000"></kiadasev>
+        <kiado id="kiado1" knev="Szabo Daniel"></kiado>
+        <szerzo id="szerzo1" sznev="Johnny Sins"></szerzo>
+    </konyv>
+    
+    <konyv id="k2" mufah="Szoftverteszteles">
+        <cim id="cim2" nev="Java_Teszteles"></cim>
+        <kiadasev id="kiadas2" ev="1998"></kiadasev>
+        <kiado id="kiado2" knev="Petofi Sandor"></kiado>
+        <szerzo id="szerzo2" sznev="Mia Khalifa"></szerzo>
+    </konyv>
+    
+    <konyv id="k3" mufah="mesterseges_intelligencia">
+        <cim id="cim3" nev="Sakkozo"></cim>
+        <kiadasev id="kiadas3" ev="1980"></kiadasev>
+        <kiado id="kiado3" knev="Safrany Emese"></kiado>
+        <szerzo id="szerzo3" sznev="Csicsolina"></szerzo>
+    </konyv>
+</konyvtar>

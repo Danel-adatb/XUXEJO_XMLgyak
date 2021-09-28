@@ -1,0 +1,13 @@
+<adatbazis>
+    <dolgozo id="d1">
+        <kod id="k1"></kod>
+        <nev id="n1" elnevezes="Szabo Daniel"></nev>
+        <fizetes id="f1" ertek="150000"></fizetes>
+    </dolgozo>
+    
+    <dolgozo id="d2">
+        <kod id="k2"></kod>
+        <nev id="n2" elnevezes="Peto Adam"></nev>
+        <fizetes id="f2" ertek="100000"></fizetes>
+    </dolgozo>
+</adatbazis>
