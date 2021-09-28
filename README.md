@@ -9,5 +9,5 @@ Szabó Dániel - XUXEJO (G3BIW)
 
 2021.09.21 - 3. Gyakorlat - KÉSZ (2. Gyak ként)
 
-2021.09.28 - 4. Gyakorlat - Folyamatban
+2021.09.28 - 4. Gyakorlat - (4.Feladat még kell)
 
