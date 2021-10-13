@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cards>
+    <card id="1">
+        <name>Daniel Szabo</name>
+        <company id="c1">
+            <company_name>Szabo WPM.KFT</company_name>
+            <address id="a1">
+                <number>3600</number>
+                <city>Ozd</city>
+                <street>Gomori</street>
+                <house>44</house>
+            </address>
+        </company>
+        <phone_number>06704111111</phone_number>
+        <webpage>www.SzWPM.com </webpage>
+        <position>CEO</position>
+        <email>szadaegyetem@gmail.com</email>
+    </card>
+    <card id="2">
+        <name>Daniel2 Szabo2</name>
+        <company id="c2">
+            <company_name>Szabo2 WPM.KFT</company_name>
+            <address id="a2">
+                <number>3600</number>
+                <city>Ozd</city>
+                <street>Gomori</street>
+                <house>44</house>
+            </address>
+        </company>
+        <phone_number>06704111111</phone_number>
+        <webpage>www.SzWPM.com </webpage>
+        <position>CEO</position>
+        <email>szadaegyetem@gmail.com</email>
+    </card>
+</cards>

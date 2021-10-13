@@ -3,61 +3,44 @@
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:tns="http://www.bdo.com.ph/RemitAPI">
   
-  <xs:element name="Schedule" type="table">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="days" type="xs:string"></xs:element>
-        <xs:element name="times" type="xs:string"></xs:element>
-        <xs:element name="classes" type="xs:string"></xs:element>
-      </xs:sequence>
+  <xs:complexType name="classT">
+        <xs:sequence>
+            <xs:element name="targy" type="xs:string"></xs:element>
+            <xs:element name="idopont" type="xs:string"></xs:element>
+            <xs:element name="oktato" type="xs:string"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int" use="required"></xs:attribute>
+        <xs:attribute name="tipus" type="classTT" default="class"></xs:attribute>
     </xs:complexType>
     
-    <xs:complexType name="School">
-      <xs:complexContent>
-        <xs:extension base="Schedule">
-          <xs:sequence>
-            <xs:element name="days">
-              <xs:complexType>
-                <xs:element name="monday" type="xs:string"></xs:element>
-                <xs:element name="tuesday" type="xs:string"></xs:element>
-                <xs:element name="wednesday" type="xs:string"></xs:element>
-              </xs:complexType>
-            </xs:element>
-          </xs:sequence>
-        </xs:extension>
-      </xs:complexContent>
-      
-      <xs:complexContent>
-        <xs:extension base="Schedule">
-          <xs:sequence>
-            <xs:element name="times">
-              <xs:complexType>
-                <xs:element name="8-10" type="xs:string"></xs:element>
-                <xs:element name="10-12" type="xs:string"></xs:element>
-                <xs:element name="12-14" type="xs:string"></xs:element>
-                <xs:element name="14-16" type="xs:string"></xs:element>
-                <xs:element name="16-18" type="xs:string"></xs:element>
-              </xs:complexType>
-            </xs:element>
-          </xs:sequence>
-        </xs:extension>
-      </xs:complexContent>
-      
-      <xs:complexContent>
-        <xs:extension base="Schedule">
-          <xs:sequence>
-            <xs:element name="classes">
-              <xs:complexType>
-                <xs:element name="Java" type="xs:string"></xs:element>
-                <xs:element name="Mesint" type="xs:string"></xs:element>
-                <xs:element name="Webtech" type="xs:string"></xs:element>
-                <xs:element name="IntVallRend" type="xs:string"></xs:element>
-                <xs:element name="XML" type="xs:string"></xs:element>
-                <xs:element name="Szoftteszt" type="xs:string"></xs:element>
-              </xs:complexType>
-            </xs:element>
-          </xs:sequence>
-        </xs:extension>
-      </xs:complexContent>
+    <xs:simpleType name="classTT">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="class"></xs:enumeration>
+            <xs:enumeration value="practice"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="dateT">
+         <xs:sequence>
+            <xs:element name="day" type="dayT"></xs:element>
+            <xs:element name="start" type="dateClassT"></xs:element>
+            <xs:element name="end" type="dateClassT"></xs:element>
+         </xs:sequence>
     </xs:complexType>
-  </xs:element>
+    
+    <xs:simpleType name="dayT">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="hetfo"></xs:enumeration>
+            <xs:enumeration value="kedd"></xs:enumeration>
+            <xs:enumeration value="szerda"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="dateClassT">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="8"></xs:minInclusive>
+            <xs:maxInclusive value="18"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+  
+</xs:schema>  

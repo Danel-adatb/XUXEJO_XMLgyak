@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book id="bc_1">
+        <title>Metro 2033</title>
+        <author>Dmitry Glukhovsky</author>
+         <characters>
+            <character id="c1" name="Artyom">
+                <name>Artyom Alekseyevich Chyornyj</name>
+                <friend>Hunter</friend>
+                <born>2009</born>
+                <characteristich>Stront, Tall, Uses AK47</characteristich>
+            </character>
+            <character id="c2" name="Daniel">
+                <name>Szabo Daniel</name>
+                <friend>Beno</friend>
+                <born>2000</born>
+                <characteristich>stupid but strong</characteristich>
+            </character>
+        </characters>
+    </book>
+</books>
