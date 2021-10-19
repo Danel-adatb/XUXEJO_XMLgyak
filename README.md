@@ -14,3 +14,5 @@ Szabó Dániel - XUXEJO (G3BIW)
 2021.10.05 - 5. Gyakorlat - (HIÁNYZÁS, BETEGSÉG)
 
 2021.10.12 - 6. Gyakorlat - KÉSZ
+
+2021.10.19 - 7. Gyakorlat - Java
