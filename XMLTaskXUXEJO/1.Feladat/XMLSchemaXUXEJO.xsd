@@ -1,26 +1,126 @@
 <xs:schema xmins:xs="http://www.w3.org/2001/XMLSchema" elementFornDefault="qualified">
     
     <!-- autó -->
-    <xs:element name="autó">
+    <xs:element name="rally">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="autóTipusok" type="autoTipus" minOccur="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="autóTipusok" type="autoTipus"></xs:element>
+                <xs:element name="orszagok" type="orszagTipus"></xs:element>
+                <xs:element name="nemzetisegek" type="nemzetisegTipus"></xs:element>
+                <xs:element name="kornyezet" type="kornyezetTipus"></xs:element>
+                <xs:element name="szakaszJellmezés" type="szakaszJellemTipus"></xs:element>
+                <xs:element name="AutóTulajdonos" type="tulajdonTipus"></xs:element>
+                <xs:element name="VersenyzőVezeték" type="versenyzoVezetekTipus"></xs:element>
+                <xs:element name="VersenyzőKereszt" type="versenyzoKeresztTipus"></xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     
+    <!-- Autó Tipus -->
     <xs:complexType name="autoTipus">
-        <xs:sequence>
-            <xs:element name="bmw_me_e30" type="xs:string"></xs:element>
-            <xs:element name="ford_fiesta_r5" type="xs:string"></xs:element>
-            <xs:element name="ford_focus_wrc" type="xs:string"></xs:element>
-            <xs:element name="skoda_fabia_r5" type="xs:string"></xs:element>
-            <xs:element name="wv_polo_r5" type="xs:string"></xs:element>
-        </xs:sequence>
-        <xs:attribute name="Név" type="nevTipus"></xs:attribute>
+        <xs:attribute name="Autok" type="markaTipsuok"></xs:attribute>
         <xs:attribute name="Versenyben" type="versenyTipus"></xs:attribute>
+        <xs:attribute name="Szakasz" type="szakaszTipus"></xs:attribute>
     </xs:complexType>
+
+    <!-- Környezet tipus -->
+
+    <xs:complexType name="kornyezetTipus">
+        <xs:attribute name="SérültAutó" type="serulesTipus"></xs:attribute>
+        <xs:attribute name="Szakasz" type="szakaszTipus"></xs:attribute>
+        <xs:attribute name="Autok" type="markaTipsuok"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of Környezet Tipus -->
+
+    <!-- Nemzetiság tipusok -->
+
+    <xs:complexType name="nemzetisegTipus">
+        <xs:sequence>
+            <xs:element name="cseh" type="xs:string"></xs:element>
+            <xs:element name="francia" type="xs:string"></xs:element>
+            <xs:element name="német" type="xs:string"></xs:element>
+            <xs:element name="olasz" type="xs:string"></xs:element>
+            <xs:element name="magyar" type="xs:string"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="NemzetKód" type="xs:int"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of Nemzetiség tipsuok -->
+
+    <!-- Ország tipusok -->
+
+    <xs:complexType name="orszagTipus">
+        <xs:attribute name="országID" type="xs:int"></xs:attribute>
+        <xs:attribute name="Szakasz" type="szakaszTipus"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of Ország tipsuok -->
+
+    <!-- Szakasz tipusok -->
+
+    <xs:complexType name="szakaszJellemTipus">
+        <xs:attribute name="Szakasz" type="szakaszTipus"></xs:attribute>
+        <xs:attribute name="Hömérséklet" type="homersekletTipus"></xs:attribute>
+        <xs:attribute name="Hossz" type="hosszTipus"></xs:attribute>
+        <xs:attribute name="felület" type="feluletTipus"></xs:attribute>
+        <xs:attribute name="Vkód" type="vkod"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of Szakasz tipusok -->
+
+    <!-- Tuljajdonos tipusok -->
+
+    <xs:complexType name="tulajdonTipus">
+        <xs:attribute name="Autok" type="markaTipsuok"></xs:attribute>
+        <xs:attribute name="NemzetKód" type="xs:int"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of Tulajdonos tipusok -->
+
+    <!-- vezetéknév tipusok -->
+
+    <xs:complexType name="versenyzoVezetekTipus">
+        <xs:sequence>
+            <xs:element name="Tanak" type="xs:string"></xs:element>
+            <xs:element name="Ogier" type="xs:string"></xs:element>
+            <xs:element name="Rovenpera" type="xs:string"></xs:element>
+            <xs:element name="Neuville" type="xs:string"></xs:element>
+            <xs:element name="Perez" type="xs:string"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="Vkód" type="vkod"></xs:attribute>
+        <xs:attribute name="NemzetKód" type="xs:int"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of vezetéknév tipusok -->
+
+    <!-- keresztnév tipusok -->
+
+    <xs:complexType name="versenyzoVezetekTipus">
+        <xs:sequence>
+            <xs:element name="Ott" type="xs:string"></xs:element>
+            <xs:element name="Sebastian" type="xs:string"></xs:element>
+            <xs:element name="Kella" type="xs:string"></xs:element>
+            <xs:element name="Thierry" type="xs:string"></xs:element>
+            <xs:element name="Sergio" type="xs:string"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="Vkód" type="vkod"></xs:attribute>
+    </xs:complexType>
+
+    <!-- End of keresztnév tipusok -->
     
+    <!-- SimpleType -->
+    <!-- Márka tipusok -->
+    <xs:simpleType name="markaTipusok">
+        <xs:restriction base="xs:string">
+            <xs:enumeration name="bmw_me_e30" type="xs:string"></xs:enumeration>
+            <xs:enumeration name="ford_fiesta_r5" type="xs:string"></xs:enumeration>
+            <xs:enumeration name="ford_focus_wrc" type="xs:string"></xs:enumeration>
+            <xs:enumeration name="skoda_fabia_r5" type="xs:string"></xs:enumeration>
+            <xs:enumeration name="wv_polo_r5" type="xs:string"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
     <!-- Versenyben -->
     <xs:simpleType name="versenyTipus">
         <xs:restriction base="xs:string">
@@ -29,84 +129,56 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <!-- Szakasz név -->
-    <xs:simpleType name="nevTipus">
+    <!-- Szakasz Tipus -->
+    <xs:simpleType name="szakaszTipus">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="magyar_szakasz"></xs:enumeration>
-            <xs:enumeration value="olasz_szakasz"></xs:enumeration>
             <xs:enumeration value="francia_szakasz"></xs:enumeration>
-            <xs:enumeration value="orosz_szakasz"></xs:enumeration>
+            <xs:enumeration value="magyar_szakasz"></xs:enumeration>
             <xs:enumeration value="nemet_szakasz"></xs:enumeration>
+            <xs:enumeration value="olasz_szakasz"></xs:enumeration>
+            <xs:enumeration value="orosz_szakasz"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
 
-    <!-- End of Auto -->
+    <!-- serulesTipus -->
 
-    <!-- Környezet adatai -->
-
-    <xs:element name="környezet_adatai">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="környezetTipusok" type="kornyezetTipus"></xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:complexType name="kornyezetTipus">
-        <xs:attribute name="Autó_Neve" type="autoTipus"></xs:attribute>
-        <xs:attribute name="Sérült_autó" type="versenyTipus"></xs:attribute>
-        <xs:attribute name="Név" type="nevTipus"></xs:attribute>
-    </xs:complexType>
-
-    <!-- End of Környezet adatai -->
-
-    <!-- Nemzetiség -->
-
-    <xs:element name="Nemzetiség">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="NemzetTipusok" type="nemzetTipus" ></xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-    
-    <xs:complexType name="nemzetTipus">
-        <xs:sequence>
-            <xs:element name="cseh" type="xs:string"></xs:element>
-            <xs:element name="francia" type="xs:string"></xs:element>
-            <xs:element name="német" type="xs:string"></xs:element>
-            <xs:element name="olasz" type="xs:string"></xs:element>
-            <xs:element name="magyar" type="xs:string"></xs:element>
-        </xs:sequence>
-        <xs:attribute name="id" type="xs:int" use="required"></xs:attribute>
-    </xs:complexType>
-
-    <!-- End of Nemzetiség -->
-
-    <!-- ..................................................................................... -->
-    
-    <xs:complexType name="idopontTipus">
-         <xs:sequence>
-            <xs:element name="nap" type="napTipus"></xs:element>
-            <xs:element name="tol" type="idopontOraTipus"></xs:element>
-            <xs:element name="ig" type="idopontOraTipus"></xs:element>
-         </xs:sequence>
-    </xs:complexType>
-    
-    <xs:simpleType name="napTipus">
+    <xs:simpleType name="serulesTipus">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="hetfo"></xs:enumeration>
-            <xs:enumeration value="kedd"></xs:enumeration>
-            <xs:enumeration value="szerda"></xs:enumeration>
-            <xs:enumeration value="csutortok"></xs:enumeration>
-            <xs:enumeration value="pentek"></xs:enumeration>
+            <xs:enumeration value="igen"></xs:enumeration>
+            <xs:enumeration value="nem"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
-    
-    <xs:simpleType name="idopontOraTipus">
+
+    <!-- homerseklet tipusok -->
+    <xs:simpleType name="homersekletTipus">
+        <xs:restriction base="xs:Integer">
+            <xs:minInclusive value="-30"></xs:minInclusive>
+            <xs:maxInclusive value="45"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Hossz tipus -->
+    <xs:simpleType name="hosszTipus">
         <xs:restriction base="xs:positiveInteger">
-            <xs:minInclusive value="8"></xs:minInclusive>
-            <xs:maxInclusive value="18"></xs:maxInclusive>
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="50"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Felület tipus -->
+    <xs:simpleType name="feluletTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="murva"></xs:enumeration>
+            <xs:enumeration value="aszfalt"></xs:enumeration>
+            <xs:enumeration value="aszfalt-murva"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Hossz tipus -->
+    <xs:simpleType name="vkod">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxInclusive value="5"></xs:maxInclusive>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
