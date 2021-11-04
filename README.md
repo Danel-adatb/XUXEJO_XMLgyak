@@ -19,6 +19,4 @@ Szabó Dániel - XUXEJO (G3BIW)
 
 2021.10.26. - 8. Gyakorlat - 1. feladat - kész | 2.feladat - kész | 3. feladat - kész | 4. feladat - X
 
-2021.11.01. - XMLTaskXUXEJO - BEADANDÓ - 1. feladat - .xsd még nincs kész
-                            - BEADANDÓ - 1. feladat - dokumentáció még
-                            - BEADANDÓ - 2. feladat - KÉSZ
+2021.11.01. - XMLTaskXUXEJO - KÉSZ
