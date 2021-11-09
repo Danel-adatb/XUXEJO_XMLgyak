@@ -21,6 +21,6 @@ Szabó Dániel - XUXEJO (G3BIW)
 
 2021.11.02. - 9. Gyakorlat - REKTORI SZÜNET
 
-2021.11.09. - 10. Gyakorlat - Folyamatban...
+2021.11.09. - 10. Gyakorlat - KÉSZ
 
 2021.11.01. - XMLTaskXUXEJO - KÉSZ
