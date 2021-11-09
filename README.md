@@ -23,4 +23,4 @@ Szabó Dániel - XUXEJO (G3BIW)
 
 2021.11.09. - 10. Gyakorlat - KÉSZ
 
-2021.11.01. - XMLTaskXUXEJO - KÉSZ
+2021.11.01. - XMLTaskXUXEJO - XDM model kijavítása
