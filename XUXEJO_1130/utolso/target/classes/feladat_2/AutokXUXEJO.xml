@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<autok>
+	<auto rsz="ABC-100">
+		<tipus>FIAT</tipus>
+		<ar>212233</ar>
+		<szin>piros</szin>
+		<tulaj>
+			<nev>Daniel</nev>
+			<varos>Ozd</varos>
+		</tulaj>
+	</auto>
+	
+	<auto rsz="ABC-101">
+		<tipus>FIAT</tipus>
+		<ar>212233</ar>
+		<szin>piros</szin>
+		<tulaj>
+			<nev>Daniel</nev>
+			<varos>Ozd</varos>
+		</tulaj>
+	</auto>
+	
+	<auto rsz="ABC-102">
+		<tipus>FIAT</tipus>
+		<ar>212233</ar>
+		<szin>piros</szin>
+		<tulaj>
+			<nev>Daniel</nev>
+			<varos>Ozd</varos>
+		</tulaj>
+	</auto>
+	
+	<auto rsz="ABC-103">
+		<tipus>FIAT</tipus>
+		<ar>212233</ar>
+		<szin>piros</szin>
+		<tulaj>
+			<nev>Daniel</nev>
+			<varos>Ozd</varos>
+		</tulaj>
+	</auto>
+</autok>

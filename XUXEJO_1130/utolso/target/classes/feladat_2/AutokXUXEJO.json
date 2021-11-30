@@ -1,0 +1,42 @@
+[
+   {
+      "@rsz": "ABC-100",
+      "tipus": "FIAT",
+      "ar": "212233",
+      "szin": "piros",
+      "tulaj": {
+         "nev": "Daniel",
+         "varos": "Ozd"
+      }
+   },
+   {
+      "@rsz": "ABC-101",
+      "tipus": "FIAT",
+      "ar": "212233",
+      "szin": "piros",
+      "tulaj": {
+         "nev": "Daniel",
+         "varos": "Ozd"
+      }
+   },
+   {
+      "@rsz": "ABC-102",
+      "tipus": "FIAT",
+      "ar": "212233",
+      "szin": "piros",
+      "tulaj": {
+         "nev": "Daniel",
+         "varos": "Ozd"
+      }
+   },
+   {
+      "@rsz": "ABC-103",
+      "tipus": "FIAT",
+      "ar": "212233",
+      "szin": "piros",
+      "tulaj": {
+         "nev": "Daniel",
+         "varos": "Ozd"
+      }
+   }
+]
