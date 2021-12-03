@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+
+
+<Rally>
+    <!-- Tábla Autó -->
+    <auto id="1" brand="bmw">
+        <AutóNév type="murvára">bmw_m3_e30</AutóNév>
+        <Versenyben>igen</Versenyben>
+        <Név>magyar_szakasz</Név>
+    </auto>
+
+    <auto id="2" brand="ford">
+        <AutóNév type="murvára">ford_fiesta_r5</AutóNév>
+        <Versenyben>nem</Versenyben>
+        <Név type="murva">olasz_szakasz</Név>
+    </auto>
+
+    <auto id="3" brand="ford">
+        <AutóNév type="aszfaltra">ford_focus_wrc</AutóNév>
+        <Versenyben>nem</Versenyben>
+        <Név>francia_szakasz</Név>
+    </auto>
+
+    <auto id="4" brand="skoda">
+        <AutóNév type="aszfaltra">skoda_fabia_r5</AutóNév>
+        <Versenyben>nem</Versenyben>
+        <Név>orosz_szakasz</Név>
+    </auto>
+
+    <auto id="5" brand="volkswagen">
+        <AutóNév type="Vegyes">wv_polo_r5</AutóNév>
+        <Versenyben>igen</Versenyben>
+        <Név>nemet_szakasz</Név>
+    </auto>
+
+    <!-- Tábla Környezet -->
+    <kornyezet id="1">
+        <Sérült_autó>nem</Sérült_autó>
+        <Név>francia_szakasz</Név>
+        <Autó_Neve>ford_focus_wrc</Autó_Neve>
+    </kornyezet>
+
+    <kornyezet id="2">
+        <Sérült_autó>igen</Sérült_autó>
+        <Név>nemet_szakasz</Név>
+        <Autó_Neve>wv_polo_r5</Autó_Neve>
+    </kornyezet>
+
+    <kornyezet id="3">
+        <Sérült_autó>igen</Sérült_autó>
+        <Név>magyar_szakasz</Név>
+        <Autó_Neve>bmw_m3_e30</Autó_Neve>
+    </kornyezet>
+
+    <kornyezet id="4">
+        <Sérült_autó>nem</Sérült_autó>
+        <Név>olasz_szakasz</Név>
+        <Autó_Neve>ford_fiesta_r5</Autó_Neve>
+    </kornyezet>
+
+    <kornyezet id="5">
+        <Sérült_autó>nem</Sérült_autó>
+        <Név>orosz_szakasz</Név>
+        <Autó_Neve>skoda_fabia_r5</Autó_Neve>
+    </kornyezet>
+
+    <!-- Tábla Nemzetiség -->
+    <nemzetiseg id="1">
+        <NemzetKód>1</NemzetKód>
+        <Név>cseh</Név>
+    </nemzetiseg>
+
+    <nemzetiseg id="2">
+        <NemzetKód>2</NemzetKód>
+        <Név>francia</Név>
+    </nemzetiseg>
+
+    <nemzetiseg id="3">
+        <NemzetKód>3</NemzetKód>
+        <Név>német</Név>
+    </nemzetiseg>
+
+    <nemzetiseg id="4">
+        <NemzetKód>4</NemzetKód>
+        <Név>olasz</Név>
+    </nemzetiseg>
+
+    <nemzetiseg id="5">
+        <NemzetKód>5</NemzetKód>
+        <Név>magyar</Név>
+    </nemzetiseg>
+
+    <!-- Tábla Ország -->
+    <orszag id="1">
+        <OrszágID>3</OrszágID>
+        <Név>francia_szakasz</Név>
+    </orszag>
+
+    <orszag id="2">
+        <OrszágID>1</OrszágID>
+        <Név>magyar_szakasz</Név>
+    </orszag>
+
+    <orszag id="3">
+        <OrszágID>4</OrszágID>
+        <Név>nemet_szakasz</Név>
+    </orszag>
+
+    <orszag id="4">
+        <OrszágID>2</OrszágID>
+        <Név>olasz_szakasz</Név>
+    </orszag>
+
+    <orszag id="5">
+        <OrszágID>5</OrszágID>
+        <Név>orosz_szakasz</Név>
+    </orszag>
+
+    <!-- Tábla Szakasz -->
+    <szakasz id="1">
+       <Név>francia_szakasz</Név>
+       <Hőmérséklet>15</Hőmérséklet>
+       <Hossz>12</Hossz>
+       <Felület>aszfalt</Felület>
+       <Vkód>5</Vkód>
+    </szakasz>
+
+    <szakasz id="2">
+        <Név>magyar_szakasz</Név>
+        <Hőmérséklet>12</Hőmérséklet>
+        <Hossz>25</Hossz>
+        <Felület>murva</Felület>
+        <Vkód>1</Vkód>
+    </szakasz>
+
+    <szakasz id="3">
+        <Név>nemet_szakasz</Név>
+        <Hőmérséklet>4</Hőmérséklet>
+        <Hossz>25</Hossz>
+        <Felület>aszfalt-murva</Felület>
+        <Vkód>4</Vkód>
+    </szakasz>
+
+    <szakasz id="4">
+        <Név>olasz_szakasz</Név>
+        <Hőmérséklet>9</Hőmérséklet>
+        <Hossz>30</Hossz>
+        <Felület>murva</Felület>
+        <Vkód>3</Vkód>
+    </szakasz>
+
+    <szakasz id="5">
+        <Név>orosz_szakasz</Név>
+        <Hőmérséklet>-1</Hőmérséklet>
+        <Hossz>27</Hossz>
+        <Felület>aszfalt</Felület>
+        <Vkód>2</Vkód>
+    </szakasz>
+
+    <!-- Tábla Tulajdonos -->
+    <tulajdonos id="1">
+        <AutóNév>bmw_me_e30</AutóNév>
+        <NemzetKód>5</NemzetKód>
+    </tulajdonos>
+
+    <tulajdonos id="2">
+        <AutóNév>ford_fiesta_r5</AutóNév>
+        <NemzetKód>2</NemzetKód>
+    </tulajdonos>
+
+    <tulajdonos id="3">
+        <AutóNév>ford_focus_wrc</AutóNév>
+        <NemzetKód>3</NemzetKód>
+    </tulajdonos>
+
+    <tulajdonos id="4">
+        <AutóNév>skoda_fabia_r5</AutóNév>
+        <NemzetKód>4</NemzetKód>
+    </tulajdonos>
+
+    <tulajdonos id="5">
+        <AutóNév>wv_polo_r5</AutóNév>
+        <NemzetKód>1</NemzetKód>
+    </tulajdonos>
+
+    <!-- Tábla Versenyző -->
+    <versenyzo id="1">
+        <Vkód>1</Vkód>
+        <Vezetéknév>Tanak</Vezetéknév>
+        <Nemzetkód>5</Nemzetkód>
+    </versenyzo>
+
+    <versenyzo id="2">
+        <Vkód>2</Vkód>
+        <Vezetéknév>Ogier</Vezetéknév>
+        <Nemzetkód>3</Nemzetkód>
+    </versenyzo>
+
+    <versenyzo id="3">
+        <Vkód>3</Vkód>
+        <Vezetéknév>Rovenpera</Vezetéknév>
+        <Nemzetkód>1</Nemzetkód>
+    </versenyzo>
+
+    <versenyzo id="4">
+        <Vkód>4</Vkód>
+        <Vezetéknév>Neuville</Vezetéknév>
+        <Nemzetkód>2</Nemzetkód>
+    </versenyzo>
+
+    <versenyzo id="5">
+        <Vkód>5</Vkód>
+        <Vezetéknév>Perez</Vezetéknév>
+        <Nemzetkód>4</Nemzetkód>
+    </versenyzo>
+
+    <!-- Tábla V_Keresztnév -->
+    <v_keresztnev id="1">
+        <Keresztnév>Ott</Keresztnév>
+        <Vkód>1</Vkód>
+    </v_keresztnev>
+
+    <v_keresztnev id="2">
+        <Keresztnév>Sebastian</Keresztnév>
+        <Vkód>2</Vkód>
+    </v_keresztnev>
+
+    <v_keresztnev id="3">
+        <Keresztnév>Kella</Keresztnév>
+        <Vkód>3</Vkód>
+    </v_keresztnev>
+
+    <v_keresztnev id="4">
+        <Keresztnév>Thierry</Keresztnév>
+        <Vkód>4</Vkód>
+    </v_keresztnev>
+
+    <v_keresztnev id="5">
+        <Keresztnév>Segio</Keresztnév>
+        <Vkód>5</Vkód>
+    </v_keresztnev>
+</Rally>
